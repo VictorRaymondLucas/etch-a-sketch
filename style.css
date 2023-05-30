@@ -1,11 +1,39 @@
+h1 {
+  font-family: "DIN", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: navy;
+}
+
+#button {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+}
+
+button {
+  font-family: "DIN", Helvetica, Arial, sans-serif;
+  color: navy;
+  background-color: turquoise;
+  border-color: navy;
+}
+
 #container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 1px;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 400px;
+    min-height: 400px;
     margin: 0 auto;
+    border: 1px solid turquoise;
   }
+
   .square {
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    background-color: white ;
+    border: 1px solid navy;
   }
